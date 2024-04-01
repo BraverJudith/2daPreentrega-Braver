@@ -1,0 +1,82 @@
+[
+    {
+    "id": 1002,
+    "pictureUrl": "../src/assets/images/madejas2.png",
+    "title": "Algodon Fino",
+    "price": 2000,
+    "description": "madeja de verano",
+    "temporada": "verano"
+  },
+  {
+    "id": 1003,
+    "pictureUrl": "../src/assets/images/madejas3.png",
+    "title": "Algodon Grueso",
+    "price": 2300,
+    "description": "madeja de verano",
+    "temporada": "verano"
+  },
+  {
+    "id": 1004,
+    "pictureUrl": "../src/assets/images/madejas4.png",
+    "title": "Cashmilon 8/3",
+    "price": 1910,
+    "description": "madeja de invierno",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1005,
+    "pictureUrl": "../src/assets/images/afrodita.png",
+    "title": "Afrodita",
+    "price": 2500,
+    "description": "madeja de invierno",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1006,
+    "pictureUrl": "../src/assets/images/nevilan.png",
+    "title": "Nevilan",
+    "price": 3000,
+    "description": "madeja de invierno",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1008,
+    "pictureUrl": "../src/assets/images/nachito1.png",
+    "title": "Nachito",
+    "price": 2450,
+    "description": "ovillo de invierno",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1009,
+    "pictureUrl": "../src/assets/images/nachito2.png",
+    "title": "Nachito Matizado",
+    "price": 3450,
+    "description": "ovillo de invierno",
+    "temporada": "invierno"
+  },
+  {
+    "id": 1010,
+    "pictureUrl": "../src/assets/images/sole1.png",
+    "title": "Sole",
+    "price": 2910,
+    "description": "ovillo de invierno",
+    "temporada": "verano"
+  },
+  {
+    "id": 1011,
+    "pictureUrl": "../src/assets/images/luna.png",
+    "title": "Luna",
+    "price": 3910,
+    "description": "ovillo de verano",
+    "temporada": "verano"
+  },
+  {
+    "id": 1013,
+    "pictureUrl": "../src/assets/images/jorFranc.png",
+    "title": "Jor Franc",
+    "price": 4490,
+    "description": "ovillo de invierno",
+    "temporada": "invierno"
+  }
+]

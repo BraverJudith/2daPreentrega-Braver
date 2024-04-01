@@ -1,9 +1,33 @@
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom'; 
+
 import Container from 'react-bootstrap/Container';
 
-export const ItemListContainer = ({greetings}) => {
+import data from "../data/productos.json";
+import { ItemList } from './ItemList';
+
+export const ItemListContainer = () => {
+    const [products, setProducts] = useState([]);
+
+    const {id} = useParams();
+
+    useEffect(() => {
+        const get = new Promise((resolve, reject) => {
+            setTimeout(() => resolve(data), 2000);
+        });
+
+        get.then ((data) => {
+            if(id){
+                const filteredData = data.filter (d => d.temporada === id);
+                setProducts(filteredData);
+            } else {
+                setProducts(data);
+            }             
+        });
+    },[id]);
     return (
-        <Container className='mt-4 text-center' >
-            <h1>{greetings}</h1>
+        <Container className='container' >
+            {products !== null && <ItemList products={products}/>}
         </Container>
     )
 }
