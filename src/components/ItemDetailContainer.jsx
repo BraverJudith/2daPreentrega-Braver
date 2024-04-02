@@ -25,8 +25,8 @@ export const ItemDetailContainer = () => {
     if (!product) return null;
 
     return (
-        <Container className='mt-4 text-center' >
-            <Card>
+        <Container className='mt-4 text-center itemContainer' >
+            <Card className='itemCard'>
                 <Card.Img variant="top" src={product.pictureUrl} />
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
