@@ -146,3 +146,38 @@
   align-items: center;
   height: 100vh; 
 }
+.form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.form-label {
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button-container {
+  text-align: center;
+}
+
+.button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(18, 94, 90); 
+}

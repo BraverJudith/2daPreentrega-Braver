@@ -163,12 +163,11 @@ export const Cart = () => {
                         <Form.Label>Celular *</Form.Label>
                         <Form.Control type="string" value={buyer.phone} name="phone" onChange={handleChange} placeholder="Ingrese su direccion numero de celular" required/>
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Quiero recibir novedades" />
-                    </Form.Group>
-                    <Button variant="primary" type="button" onClick={handleOrder}>
-                        Comprar
-                    </Button>
+                    <div className="button-container">
+                        <Button className="button" variant="primary" type="button" onClick={handleOrder}>
+                            Comprar
+                        </Button>
+                    </div>
             </Form>
         </Container>
     );
