@@ -18,9 +18,7 @@ export const ItemDetailContainer = () => {
                 if (snapshot.exists()) {
                     const data = snapshot.data();
                     setProduct(data);
-                } else {
-                    console.log("No se encontró ningún documento con ese ID.");
-                }
+                } 
             })
             .catch((error) => {
                 console.error("Error al obtener el documento:", error);
