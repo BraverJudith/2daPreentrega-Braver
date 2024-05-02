@@ -5,6 +5,24 @@
 .cartNum{
   color: rgb(160, 181, 199);
   padding: 7.5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btncontainer a {
+  text-decoration: none;
+}
+.btncontainer button{
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 .brand{
   color:lightseagreen;
@@ -29,11 +47,34 @@
   display: flex;
   justify-content: center;
 }
+.card-text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.card img {
+  height:250px;
+}
+.card a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 .button{
   background-color: lightseagreen;
   border: none;
   border-radius: 5px; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.number{
+  margin-bottom: 20px;
+}
+.buttonB{
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit; 
 }
 .itemCard{
   width: fit-content;
@@ -42,4 +83,66 @@
 .itemContainer{
   display: flex;
   justify-content: center;
+}
+.detailImg{
+  width: 18rem;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-footer {
+  background-color: white;
+  border-top: none;
+}
+.cart-table {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cart-table thead th,
+.cart-table tbody td {
+  text-align: center;
+}
+
+.cart-table thead th {
+  background-color: #f2f2f2;
+}
+
+.cart-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.cart-table tbody td {
+  padding: 10px;
+}
+
+.cart-table tbody td button {
+  background-color: rgb(17, 99, 95);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-table tbody td button:hover {
+  background-color: lightseagreen;
+}
+
+.cart-table tfoot td {
+  font-weight: bold;
+}
+.loading {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
 }

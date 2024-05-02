@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; 
-
-import Card from 'react-bootstrap/Card'; 
 import Container from 'react-bootstrap/Container';
-
-import data from "../data/productos.json";
+import { getFirestore, getDoc, doc } from 'firebase/firestore';
+import { ItemDetail } from './ItemDetail';
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
@@ -12,32 +10,28 @@ export const ItemDetailContainer = () => {
     const {id} = useParams();
 
     useEffect(() => {
-        const get = new Promise((resolve, reject) => {
-            setTimeout(() => resolve(data), 2000);
-        });
+        const db = getFirestore();
+        const refDoc = doc(db, "Items", id);
 
-        get.then ((data) => {
-                const filteredData = data.find (d => d.id === Number(id));
-                setProduct(filteredData);             
-        });
-    },[id]);
+        getDoc(refDoc)
+            .then((snapshot) => {
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    setProduct(data);
+                } else {
+                    console.log("No se encontró ningún documento con ese ID.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error al obtener el documento:", error);
+            });
+    }, [id]);
 
     if (!product) return null;
 
     return (
         <Container className='mt-4 text-center itemContainer' >
-            <Card className='itemCard'>
-                <Card.Img variant="top" src={product.pictureUrl} />
-                <Card.Body>
-                    <Card.Title>{product.title}</Card.Title>
-                    <Card.Text>
-                    {product.description}
-                    </Card.Text>
-                    <Card.Text>$
-                    {product.price}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+            <ItemDetail product={product}/>
         </Container>
     )
 }

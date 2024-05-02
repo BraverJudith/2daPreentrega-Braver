@@ -5,7 +5,8 @@
     "title": "Algodon Fino",
     "price": 2000,
     "description": "madeja de verano",
-    "temporada": "verano"
+    "temporada": "verano",
+    "stock":20
   },
   {
     "id": 1003,
@@ -13,7 +14,8 @@
     "title": "Algodon Grueso",
     "price": 2300,
     "description": "madeja de verano",
-    "temporada": "verano"
+    "temporada": "verano",
+    "stock":20
   },
   {
     "id": 1004,
@@ -21,7 +23,8 @@
     "title": "Cashmilon 8/3",
     "price": 1910,
     "description": "madeja de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":20
   },
   {
     "id": 1005,
@@ -29,7 +32,8 @@
     "title": "Afrodita",
     "price": 2500,
     "description": "madeja de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":20
   },
   {
     "id": 1006,
@@ -37,7 +41,8 @@
     "title": "Nevilan",
     "price": 3000,
     "description": "madeja de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":20
   },
   {
     "id": 1008,
@@ -45,7 +50,8 @@
     "title": "Nachito",
     "price": 2450,
     "description": "ovillo de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":20
   },
   {
     "id": 1009,
@@ -53,7 +59,8 @@
     "title": "Nachito Matizado",
     "price": 3450,
     "description": "ovillo de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":24
   },
   {
     "id": 1010,
@@ -61,7 +68,8 @@
     "title": "Sole",
     "price": 2910,
     "description": "ovillo de invierno",
-    "temporada": "verano"
+    "temporada": "verano",
+    "stock":40
   },
   {
     "id": 1011,
@@ -69,7 +77,8 @@
     "title": "Luna",
     "price": 3910,
     "description": "ovillo de verano",
-    "temporada": "verano"
+    "temporada": "verano",
+    "stock":50
   },
   {
     "id": 1013,
@@ -77,6 +86,7 @@
     "title": "Jor Franc",
     "price": 4490,
     "description": "ovillo de invierno",
-    "temporada": "invierno"
+    "temporada": "invierno",
+    "stock":30
   }
 ]
